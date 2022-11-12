@@ -1,7 +1,13 @@
+const { IMAGES_MANIFEST } = require("next/dist/shared/lib/constants");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+    images: {
+        loader: "akamai",
+        path: "",
+    },
+    reactStrictMode: true,
+    swcMinify: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
